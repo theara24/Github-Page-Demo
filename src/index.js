@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize typing effect and carousel
   type();
   showSlide(currentIndex);
-
+  AOS.init(); // Initialize AOS
   // Auto slide
   const autoSlideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
 

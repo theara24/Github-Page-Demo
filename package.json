@@ -3,8 +3,11 @@
     "build:css": "tailwindcss build src/input.css -o dist/output.css"
   },
   "devDependencies": {
-    "tailwindcss": "^2.2.19",
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5"
+    "postcss": "^8.4.5",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

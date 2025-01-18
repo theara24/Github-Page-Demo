@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -268,7 +269,7 @@
             </button>
           </div>
         </section>
-        <section class="New Shoes">
+        <section class="New Shoes section section--code">
           <div class="relative overflow-hidden mt-10">
             <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
               <div
@@ -278,15 +279,23 @@
                   <h1
                     id="typewriter"
                     class="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
-                  >Style trainding</h1>
-                  <p class="mt-4 text-xl text-gray-500">
+                    data-aos="fade-up-right"
+                    animaton-delay="1200"
+                  >
+                    Style trainding
+                  </h1>
+                  <p
+                  data-aos="fade-up"
+                  animaton-delay="1000"
+                    class="mt-4 text-xl text-gray-500"
+                  class="mt-4 text-xl text-gray-500">
                     This year, our new svelte signals will shelter you from the
                     harsh elements of a world that doesn't care if you develop
                     or die.
                   </p>
                 </div>
                 <div>
-                  <div class="mt-10">
+                  <div class="mt-10" data-aos="fade-left" animaton-delay="800">
                     <!-- Decorative image grid -->
                     <div
                       aria-hidden="true"
@@ -364,6 +373,8 @@
 
                     <a
                       href="#"
+                      data-aos="fade-up-right"
+                      animaton-delay="900"
                       class="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
                       >Svelte Signals</a
                     >
@@ -377,10 +388,13 @@
           <div class="container mx-auto px-4 bg-gray-50">
             <!-- Header -->
             <div class="text-center mt-10 pt-10">
-              <h2 class="text-3xl font-semibold text-gray-800">
+              <h2
+                class="text-3xl font-semibold text-gray-800"
+                data-aos="fade-up" animaton-delay="1000"
+              >
                 What We Offer
               </h2>
-              <p class="mt-4 text-lg text-gray-600">
+              <p class="mt-4 text-lg text-gray-600" data-aos="fade-up" animaton-delay="800">
                 Discover the features and benefits of our services tailored to
                 your needs.
               </p>
@@ -1363,5 +1377,9 @@
     </div>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
